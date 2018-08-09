@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+.color-p{color: #DD1B7A !important;} .color-gary{color: #888888 !important;}
+.bg-p{background-color: #DD1B7A !important;}
+.bg-w{background-color: #ffffff !important;}
+.bdb{border-bottom: 1px solid #f8f8f8}
+/*******************************************************/
+
+body{ background-color: #F8F8F8}
+.container{
+    min-width: 300px;  max-width: 640px;  margin: 0 auto;  position: relative;
+    color: #181818;
+}
+.header{
+    width: 100%;  max-width: 640px;  line-height: 48px;  position: fixed;  z-index: 99;
+    top: 0;  text-align: center;  padding: 0 20px; border-bottom: 1px solid #F8F8F8;background-color: #fff;
+}
+.footer{
+    width: 100%;  max-width: 640px;  line-height: 50px;  position: fixed;  z-index: 99;
+    bottom: 0;  border-top: 1px solid #F8F8F8;background-color: #fff;
+    display: -webkit-flex;  display: flex;
+}
+.footer .flex1{
+    -webkit-flex: 1;  flex: 1;
+}
+.footer .flex2{
+    width: 100px;  text-align: center;
+    color: #fff;  background-color: #DB1073;
+}
+.arrow-left{
+    width: 10px;  height: 18px;  position: absolute;
+    top: 15px;  left: 20px;  background: url("../images/app/arrow-left.png") no-repeat center center;
+    background-size: 10px 18px;
+}
+.opr-right{
+    position: absolute;top:0;right: 20px;
+}
+.tickets-type{
+    overflow: hidden;
+}
+span[class ^= 'tickets-']{
+    padding: 7px 7px 7px 28px;  border: 1px solid #DFDFDF;  display: inline-block;
+    margin-left: 5px;
+}
+.tickets-box .active{
+    border:1px solid #E96FAB;
+}
+
+.tickets-r{
+    background: transparent url('../images/app/icon-tickets-r.png') no-repeat 4px center;
+    background-size: 16px;
+}
+.tickets-p{
+    background: transparent url('../images/app/icon-tickets-p.png') no-repeat 4px center;
+    background-size: 16px;
+}
+.tickets-b{
+    background: transparent url('../images/app/icon-tickets-b.png') no-repeat 4px center;
+    background-size: 16px;
+}
+.tickets-y{
+    background: transparent url('../images/app/icon-tickets-y.png') no-repeat 4px center;
+    background-size: 16px;
+}
+.tickets-g{
+    background: transparent url('../images/app/icon-tickets-g.png') no-repeat 4px center;
+    background-size: 16px;
+}
+.tickets-f{
+    background: transparent url('../images/app/icon-tickets-f.png') no-repeat 4px center;
+    background-size: 16px;
+}
+.seatContainer{
+    width: 100%;position: relative;overflow: hidden;padding: 20px;
+}
+.stage{
+    width: 180px;height:23px;line-height: 24px;text-align: center;
+    position: absolute;top: -2px;left: 50%;margin-left: -90px;z-index: 9;
+    background: transparent url('../images/app/img-stage.png') no-repeat center center;
+    background-size: 180px;
+}
+.row:after{
+    content:"";display:block;clear:both;
+}
+#seatMap .row{margin-bottom: 5px;}
+#seatMap .seat{
+    width: 24px;height: 24px;display: inline-block;float: left;
+    border-radius: 2px;margin-right:5px ;
+    background: transparent url('../images/app/icon-seat-nor-2.png') no-repeat center center;
+    background-size: 30px;
+}
+#seatMap .seat.r{
+    background: transparent url('../images/app/icon-seat-r-2.png') no-repeat center center;
+    background-size: 30px;
+}
+#seatMap .seat.p{
+    background: transparent url('../images/app/icon-seat-p-2.png') no-repeat center center;
+    background-size: 30px;
+}
+#seatMap .seat.b{
+    background: transparent url('../images/app/icon-seat-b-2.png') no-repeat center center;
+    background-size: 30px;
+}
+#seatMap .seat.y{
+    background: transparent url('../images/app/icon-seat-y-2.png') no-repeat center center;
+    background-size: 30px;
+}
+#seatMap .seat.g{
+    background: transparent url('../images/app/icon-seat-g-2.png') no-repeat center center;
+    background-size: 30px;
+}
+#seatMap .seat.f{
+    background: transparent url('../images/app/icon-seat-f-2.png') no-repeat center center;
+    background-size: 30px;
+}
+#seatMap .seat.r.active,#seatMap .seat.p.active,#seatMap .seat.b.active,
+#seatMap .seat.y.active,#seatMap .seat.g.active,#seatMap .seat.f.active{
+    background: transparent url('../images/app/icon-seat-act-2.png') no-repeat center center;
+    background-size: 30px;
+}
+#seatMap .seat.r.dark,#seatMap .seat.p.dark,#seatMap .seat.b.dark,
+#seatMap .seat.y.dark,#seatMap .seat.g.dark,#seatMap .seat.f.dark{
+    background: transparent url('../images/app/icon-seat-nor-2.png') no-repeat center center;
+    background-size: 30px;
+}
+#thumb{
+    background: rgba(0,0,0,.3);padding: 10px;overflow: hidden;
+    position: absolute;top: 0;right: 0;z-index: 77;
+}
+#thumb .row{margin-bottom: 3px;}
+#thumb .seat{
+    width: 4px;height: 4px;float: left;background-color: #EAEAEA;
+    margin-right:2px ;
+}
+#thumbBox{
+    border:1px solid red;
+    position: absolute;top: 0;left: 0;
+}
+.maskBox{
+    width: 100%;max-width:640px;height: 100%;background-color: rgba(0,0,0,.3);
+    position: fixed;top: 0;bottom: 0;z-index: 88;
+}
+.mask{
+    width: 100%;background-color: #fff;
+    position: absolute;left: 0;bottom: 50px;
+}
+.mask .position{
+    line-height: 30px;padding-left: 10px;background-color: #F1F1F1;color: #888;
+}
+.mask .seatInfo tr td{  padding: 12px 5px;  }
+.extend{
+    width: 16px;height: 8px;display: inline-block;
+    background: transparent url('../images/app/arrow-up.png') no-repeat center center;
+    background-size: 16px;
+}
+.extend.dis{
+    background: transparent url('../images/app/arrow-down.png') no-repeat center center;
+    background-size: 16px;
+}
+
+.animate{
+    -webkit-transition:all .5s ease-out ;
+    transition:all .5s ease-out;
+}
