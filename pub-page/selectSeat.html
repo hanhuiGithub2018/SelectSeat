@@ -1,0 +1,1707 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<!--在iPhone的浏览器中页面将以原始大小显示，并不允许缩放-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!--控制状态栏显示样式 白色-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="white">
+	<!--网站开启对web app程序的支持-->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!--当该 HTML 页面在手机上浏览时，该标签用于指定是否将网页内容中的手机号码显示为拨号的超链接-->
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="../pub-ui/css/common_px.css" />
+	<link rel="stylesheet" href="../pub-ui/css/style.css" />
+	<script src="../pub-ui/js/rem.js"></script>
+</head>
+<body>
+<div class="container pdb-50 pdt-50">
+	<!--头部-->
+	<div class="header">
+		<!--左箭头-->
+		<i class="arrow-left"></i>
+		<span class="fs-16">选座座位</span>
+		<span class="opr-right color-p" id="num">套票优惠</span>
+	</div>
+
+	<!--主体-->
+	<div>
+		<!--标题-->
+		<div class="pd-10 bg-w">
+			<h4 class="fs-14">开心麻花爆笑舞剧《乌龙山伯爵》</h4>
+			<p class="color-gary mgt-5">2018.05.12 周六 19:30</p>
+		</div>
+
+		<!--票价类型-->
+		<div class="tickets-type pd-10 bg-w mgt-7">
+			<div class="tickets-box">
+				<span class="tickets-r">880元</span>
+				<span class="tickets-p">780元</span>
+				<span class="tickets-b">680元</span>
+				<span class="tickets-y">580元</span>
+				<span class="tickets-f">180元</span>
+			</div>
+		</div>
+
+		<!--选座-->
+		<div class="seatContainer mgt-7 bg-w">
+			<!--舞台-->
+			<div class="stage">舞台方向</div>
+
+			<!--座位-->
+			<div id="seatMap" class="mgt-30">
+				<!--红座-->
+				<div class="row" data-row="1">
+					<div class="seat hidden"></div>
+					<div class="seat enable r" data-info="{'info':'1排1座(前排)','price':'￥880'}"></div>
+					<div class="seat enable r"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable r"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable r"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable r"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+				</div>
+				<div class="row" data-row="2">
+					<div class="seat hidden"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable r"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable r"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable r"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+				</div>
+				<div class="row" data-row="3">
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable r"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable r"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable r"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+				</div>
+				<div class="row" data-row="4">
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable r"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable r"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable r"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat enable r"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable r"></div>
+				</div>
+
+				<!--粉座-->
+				<div class="row mgt-30" data-row="5">
+					<div class="seat enable p"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable p"></div>
+					<div class="seat"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable p"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+				</div>
+				<div class="row" data-row="6">
+					<div class="seat enable p"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable p"></div>
+					<div class="seat"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable p"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+				</div>
+				<div class="row" data-row="7">
+					<div class="seat enable p"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable p"></div>
+					<div class="seat"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable p"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+				</div>
+				<div class="row" data-row="8">
+					<div class="seat enable p"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable p"></div>
+					<div class="seat"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable p"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+					<div class="seat enable p"></div>
+				</div>
+
+				<!--蓝座-->
+				<div class="row mgt-30" data-row="9">
+					<div class="seat enable b"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable b"></div>
+					<div class="seat"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable b"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+				</div>
+				<div class="row" data-row="10">
+					<div class="seat enable b"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable b"></div>
+					<div class="seat"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable b"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+				</div>
+				<div class="row" data-row="11">
+					<div class="seat enable b"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable b"></div>
+					<div class="seat"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable b"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+				</div>
+				<div class="row" data-row="12">
+					<div class="seat enable b"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable b"></div>
+					<div class="seat"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable b"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+					<div class="seat enable b"></div>
+				</div>
+
+				<!--黄座-->
+				<div class="row mgt-30" data-row="13">
+					<div class="seat enable y"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable y"></div>
+					<div class="seat"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable y"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+				</div>
+				<div class="row" data-row="14">
+					<div class="seat enable y"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable y"></div>
+					<div class="seat"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable y"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+				</div>
+				<div class="row" data-row="15">
+					<div class="seat enable y"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable y"></div>
+					<div class="seat"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable y"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+				</div>
+				<div class="row" data-row="16">
+					<div class="seat enable y"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable y"></div>
+					<div class="seat"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable y"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat hidden"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+					<div class="seat enable y"></div>
+				</div>
+			</div>
+
+			<!--缩略图-->
+			<div id="thumb" class="hidden">
+				<!--红座-->
+				<div class="row">
+					<div class="seat hidden"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+				</div>
+				<div class="row">
+					<div class="seat hidden"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+				</div>
+				<div class="row">
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+				</div>
+				<div class="row">
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+					<div class="seat r"></div>
+				</div>
+
+				<!--粉座-->
+				<div class="row mgt-7">
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+				</div>
+				<div class="row">
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+				</div>
+				<div class="row">
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+				</div>
+				<div class="row">
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+					<div class="seat p"></div>
+				</div>
+
+				<!--蓝座-->
+				<div class="row mgt-7">
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+				</div>
+				<div class="row">
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+				</div>
+				<div class="row">
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+				</div>
+				<div class="row">
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+					<div class="seat b"></div>
+				</div>
+
+				<!--黄座-->
+				<div class="row mgt-7">
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+				</div>
+				<div class="row">
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+				</div>
+				<div class="row">
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+				</div>
+				<div class="row">
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+					<div class="seat y"></div>
+				</div>
+
+				<!--缩略图框-->
+				<div id="thumbBox"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<!--底部-->
+	<div class="footer">
+		<div class="flex1">
+			<span class="color-gray mgl-20"><span class="color-p">1260</span> 元 | 2张 <i class="extend"></i></span>
+		</div>
+		<div class="flex2 fs-14">确认选座</div>
+	</div>
+
+	<!--座位信息弹窗-->
+	<div class="maskBox hide">
+		<div class="mask">
+			<div class="position">锦城艺术宫</div>
+			<table class="seatInfo">
+				<tr class="bdb">
+					<td class="color-p">580元</td>
+					<td>8排6号</td>
+					<td>堂厢</td>
+					<td>距舞台约220米</td>
+					<td class="delete fs-16">&times;</td>
+				</tr>
+				<tr>
+					<td class="color-p">580元</td>
+					<td>8排6号</td>
+					<td>堂厢</td>
+					<td>距舞台约70米</td>
+					<td class="delete fs-16">&times;</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+</div>
+<script src="../pub-ui/js/zepto.min.js"></script>
+<script src="../pub-ui/js/hammer.js"></script>
+<script>
+
+	(function(){
+
+//		盒子高度设置
+		var
+				clL = document.documentElement.clientWidth,//整个页面宽度
+				ticketsBox = document.getElementsByClassName('tickets-box')[0],//票价盒子对象
+				tickets = ticketsBox.children,//票价种类
+				ticketsBoxWidth = 0;//票价盒子宽度
+
+		for(var i = 0;i < tickets.length; i++){
+
+			ticketsBoxWidth += tickets[i].clientWidth + 10;
+
+		}
+//		设置票价盒子宽度
+
+		ticketsBox.style.width = ticketsBoxWidth + 20 + "px";
+
+//		滑动设置
+
+		var
+				initX = 0,//触摸时 X 的坐标位置
+				endX = 0,//触摸结束 X 的坐标位置
+				minD = 0,//水平方向移动最小距离
+				maxD = ticketsBoxWidth - clL + 25,//水平方向最大移动距离
+				moveX = 0; //移动时 X 的距离
+
+		function touchstart(e){
+
+			initX = e.targetTouches[0].pageX;
+//			initY = e.targetTouches[0].pageY;
+		}
+
+		function touchmove(e){
+
+			e.preventDefault();
+
+			$(this).removeClass('animate');
+
+			var
+					curX = e.targetTouches[0].pageX,//滑动时 X 的坐标位置
+//					curY = e.targetTouches[0].pageY,//滑动时 Y 的坐标位置
+					X = curX - initX + moveX;//不断获取 X 滑动的 距离
+//					Y = curY - initY + moveY;//不断获取 Y 滑动的 距离
+
+			this.style.webkitTransform = 'translate3d(' + X + 'px,' + '0px,' + '0px'+ ')';
+		}
+
+		function touchend(e){
+			$(this).addClass('animate');
+
+			endX = e.changedTouches[0].pageX;
+//			endY = e.changedTouches[0].pageY;
+
+			var
+					X = endX - initX;// 最终滑动的距离
+//					Y = endY - initY;// 最终滑动的距离
+
+			moveHad(this);//获取当前 moveX , moveY
+
+//			边界滑动复位
+			maxD < 0 ? maxD = 0 : maxD;
+
+			if(moveX + X >= minD){
+//				修正左边界值
+				moveX = 0;
+				this.style.webkitTransform = 'translate3d(' + moveX + 'px,' + '0px,' + '0px'+ ')';
+			}
+			else if(moveX + X < -maxD){
+//				修正右边界值
+				moveX = -maxD;
+				this.style.webkitTransform = 'translate3d(' + moveX + 'px,' + '0px,' + '0px'+ ')';
+			}
+			else{
+//				无需修正边界值情况
+				this.style.webkitTransform = 'translate3d(' + moveX + 'px,' + '0px,' + '0px'+ ')';
+			}
+
+		}
+
+		//获取当前移动距离
+		function moveHad(elem){
+			if(elem.style.transform || elem.style.webkitTransform){
+				//获取字符串
+				var trans = elem.style.transform || elem.style.webkitTransform;
+
+				//正则表达式匹配目标元素
+				var res = trans.match(/[\d\.\-]+/ig);
+
+			}else{
+				return null;
+			}
+			//保存上次距离
+			moveX = parseFloat(res[1]);
+//			moveY = parseFloat(res[2]);
+		}
+
+		ticketsBox.addEventListener('touchstart',touchstart,false);
+		ticketsBox.addEventListener('touchmove',touchmove,false);
+		ticketsBox.addEventListener('touchend',touchend,false);
+
+	})();
+
+</script>
+<script>
+
+(function(){
+
+	var reqAnimationFrame = (function () {
+
+		return window[Hammer.prefixed(window, 'requestAnimationFrame')] || function (callback) {
+
+					window.setTimeout(callback, 1000 / 60);
+
+				};
+
+	})();
+
+	var
+			clH = document.documentElement.clientHeight,//整个页面高度
+			clL = document.documentElement.clientWidth,//整个页面宽度
+			cont = document.getElementsByClassName('seatContainer')[0],//外部容器
+			contH = clH - 234,//外部容器高度
+			thumb = document.getElementById('thumb'),//缩略图容器
+			thumbBox = document.getElementById('thumbBox'),//缩略图容器
+			seatMap = document.getElementById('seatMap'),//座位图
+			row = document.getElementsByClassName('row')[0],//第一行
+			seatW = document.getElementsByClassName('seat')[0].clientWidth,//每个座位的宽度 等于 每个座位的高度
+			seatMapW = (seatW + 5) * (row.children.length + 1),
+			seatMapH = (seatW + 10) * seatMap.querySelectorAll('.row').length,
+			thumbW = thumb.clientWidth,//缩略图容器宽度
+			thumbH = thumb.clientHeight,//缩略图容器高度
+//			ratH = thumbH / seatMapH ,//缩小比例
+			rat = thumbW / seatMapW;//缩小比例
+
+			console.log("rat"+rat);
+
+//	设置外部容器的高度
+	cont.style.height = contH + "px";
+//	设置每一行的宽度，即是内容块的宽度
+	seatMap.style.width =  seatMapW +"px";
+
+	thumbBox.style.width = clL * rat + "px";
+	thumbBox.style.height = contH * rat + "px";
+
+	var
+//			initX = - Math.abs(Math.round((clL - seatMap.clientWidth) / 2) - 15),//保存内容块 X 移动的距离
+//			initY =  Math.abs(Math.round((contH - seatMap.clientHeight) / 2) - 15),//保存内容块 X 移动的距离
+			moveX = 0,//保存内容块 X 移动的距离
+			moveY = 0,//保存内容块 X 移动的距离
+			minD = 0,//水平方向最小移动距离
+			minH = 0,//垂直方向最小移动距离
+			maxD = seatMapW - clL + 15,//水平方向最大移动距离
+			maxH = seatMapH - contH + 55,//垂直方向最大移动距离
+			initScale = 1;
+	var
+			num = document.getElementById('num');
+
+			console.log('水平方向移动最大距离'+maxD);
+			console.log('垂直方向移动最大距离'+maxH);
+
+
+	var ticking = false;
+
+	var transform;
+
+	var timer;
+
+	var timer2;
+
+	var mc = new Hammer.Manager(seatMap);
+
+	mc.add(new Hammer.Pan({ threshold: 10, pointers: 1 }));
+
+//	mc.add(new Hammer.Swipe()).recognizeWith(mc.get('pan'));
+
+//	mc.add(new Hammer.Rotate({ threshold: 0 })).recognizeWith(mc.get('pan'));
+
+//	mc.add(new Hammer.Pinch({ threshold: 0 })).recognizeWith([mc.get('pan'), mc.get('rotate')]);
+
+	mc.add(new Hammer.Pinch({ threshold: 0, pointers: 2  })).recognizeWith([mc.get('pan')]);
+
+
+	mc.on("panstart panmove panend", onPan);
+	mc.on("pinchstart pinchmove pinchend", onPinch);
+	
+
+//	function fixElement(){
+//
+//
+//
+//	}
+
+	function resetElement() {
+
+		$(seatMap).addClass('animate');
+
+		transform = {
+
+			translate: { x: moveX, y: moveY },
+
+			scale: initScale,
+
+			angle: 0,
+
+			rx: 0,
+
+			ry: 0,
+
+			rz: 0
+
+		};
+
+		requestElementUpdate();
+
+	}
+
+	function updateElementTransform() {
+
+		var
+				value = [
+
+					'translate3d(' + transform.translate.x + 'px, ' + transform.translate.y + 'px, 0)',
+
+					'scale(' + transform.scale + ', ' + transform.scale + ')'
+
+		//			'rotate3d('+ transform.rx +','+ transform.ry +','+ transform.rz +','+  transform.angle + 'deg)'
+
+				],
+
+				value2 = [
+
+					'translate3d(' + transform.translate.x2 + 'px, ' + transform.translate.y2 + 'px, 0)',
+
+					'scale(' + 1/transform.scale + ', ' + 1/transform.scale + ')'
+
+		//			'rotate3d('+ transform.rx +','+ transform.ry +','+ transform.rz +','+  transform.angle + 'deg)'
+
+				];
+
+
+		value = value.join(" ");
+
+		value2 = value2.join(" ");
+
+		seatMap.style.webkitTransform = value;
+		thumbBox.style.webkitTransform = value2;
+
+		seatMap.style.mozTransform = value;
+		thumbBox.style.mozTransform = value2;
+
+		seatMap.style.transform = value;
+		thumbBox.style.transform = value2;
+
+		ticking = false;
+
+	}
+
+	function requestElementUpdate() {
+
+		if(!ticking) {
+
+			reqAnimationFrame(updateElementTransform);
+
+			ticking = true;
+
+		}
+
+	}
+
+	function onPan(ev) {
+
+		if(ev.type == 'panstart'){
+
+			clearTimeout(timer);
+
+			$(thumbBox).removeClass('hide');
+			$(thumb).removeClass('hidden');
+
+		}
+
+		if(ev.type == 'panmove'){
+
+			$(seatMap).removeClass('animate');
+			$(thumbBox).removeClass('animate');
+
+			transform.translate = {
+
+				x: moveX + ev.deltaX,
+				x2: - (moveX + ev.deltaX) * rat,
+
+				y: moveY + ev.deltaY,
+				y2: - (moveY + ev.deltaY) * rat
+
+			};
+
+
+			requestElementUpdate();
+		}
+
+		if(ev.type == 'panend'){
+
+			$(seatMap).addClass('animate');
+			$(thumbBox).addClass('animate');
+
+			moveHad(seatMap);
+
+			maxD < 0 ? maxD = 0 : maxD;
+			maxH < 0 ? maxH = 0 : maxH;
+
+			if( moveX + ev.deltaX >= minD && moveY + ev.deltaY >= minH){
+//				修正左上角边界值
+				moveX = 0 ; moveY = 0;
+				transform.translate.x = moveX;
+				transform.translate.y = moveY;
+				transform.translate.x2 = moveX * rat;
+				transform.translate.y2 = moveY * rat;
+				requestElementUpdate();
+			}
+			else if(moveX + ev.deltaX < -maxD && moveY + ev.deltaY >= minH){
+//				修正右上角边界值
+				moveX = -maxD ; moveY = 0;
+				transform.translate.x = moveX;
+				transform.translate.y = moveY;
+				transform.translate.x2 = - moveX * rat;
+				transform.translate.y2 = - moveY * rat;
+				requestElementUpdate();
+			}
+			else if(moveX + ev.deltaX >=minD && moveY + ev.deltaY < -maxH){
+//				修正左下角边界值
+				moveX = 0 ; moveY = -maxH;
+				transform.translate.x = moveX;
+				transform.translate.y = moveY;
+				transform.translate.x2 = - moveX * rat;
+				transform.translate.y2 = - moveY * rat ;
+				requestElementUpdate();
+			}
+			else if(moveX + ev.deltaX < -maxD && moveY + ev.deltaY < -maxH){
+//				修正右下角边界值
+				moveX = -maxD ; moveY = -maxH;
+				transform.translate.x = moveX;
+				transform.translate.y = moveY;
+				transform.translate.x2 = - moveX * rat ;
+				transform.translate.y2 = - moveY * rat ;
+				requestElementUpdate();
+			}
+			else if(moveX + ev.deltaX < minD && moveX + ev.deltaX >-maxD && moveY + ev.deltaY > minH){
+//				修正上边界值
+				moveY = 0;
+				transform.translate.x = moveX;
+				transform.translate.y = moveY;
+				transform.translate.x2 = - moveX * rat;
+				transform.translate.y2 = - moveY * rat;
+				requestElementUpdate();
+			}
+			else if(moveX + ev.deltaX < minD && moveX + ev.deltaX >-maxD && moveY + ev.deltaY < -maxH){
+//				修正下边界值
+				moveY = -maxH;
+				transform.translate.x = moveX;
+				transform.translate.y = moveY;
+				transform.translate.x2 = - moveX * rat;
+				transform.translate.y2 = - moveY * rat;
+				requestElementUpdate();
+			}
+			else if(moveX + ev.deltaX >= minD && moveY + ev.deltaY  < minH && moveY + ev.deltaY  > -maxH){
+//				修正左边界值
+				moveX = 0;
+				transform.translate.x = moveX;
+				transform.translate.y = moveY;
+				transform.translate.x2 = - moveX * rat;
+				transform.translate.y2 = - moveY * rat;
+				requestElementUpdate();
+			}
+			else if(moveX + ev.deltaX < -maxD && moveY + ev.deltaY  < minH && moveY + ev.deltaY  > -maxH){
+//				修正左边界值
+				moveX = -maxD;
+				transform.translate.x = moveX;
+				transform.translate.y = moveY;
+				transform.translate.x2 = - moveX * rat;
+				transform.translate.y2 = - moveY * rat;
+				requestElementUpdate();
+			}
+			else{
+//				无需修正边界值情况
+				transform.translate.x = moveX;
+				transform.translate.y = moveY;
+				transform.translate.x2 = - moveX * rat;
+				transform.translate.y2 = - moveY * rat;
+				requestElementUpdate();
+			}
+
+			requestElementUpdate();
+
+			timer = setTimeout(function(){
+
+				$(thumbBox).addClass('hide');
+				$(thumb).addClass('hidden');
+
+			},3000);
+
+		}
+
+
+	}
+
+	function onPinch(ev) {
+
+		if(ev.type == 'pinchstart') {
+
+			initScale = transform.scale || scale;
+
+				clearTimeout(timer2);
+
+		}
+		if(ev.type == 'pinchmove'){
+
+			$(seatMap).removeClass('animate');
+			$(thumbBox).removeClass('animate');
+
+			transform.scale = initScale * ev.scale;
+
+			requestElementUpdate();
+		}
+		if(ev.type == 'pinchend'){
+
+			$(seatMap).addClass('animate');
+			$(thumbBox).addClass('animate');
+
+			if(initScale * ev.scale >= 1){
+
+				transform.scale = 1;
+
+			}
+			if(initScale * ev.scale <= 0.8){
+
+				transform.scale = 0.8;
+
+			}
+
+			requestElementUpdate();
+
+		}
+
+	}
+
+	//获取当前移动距离
+	function moveHad(elem){
+		if(elem.style.transform || elem.style.webkitTransform){
+			//获取字符串
+			var trans = elem.style.transform || elem.style.webkitTransform;
+
+//			console.log(trans);
+			//正则表达式匹配目标元素
+			var res = trans.match(/[\d\.\-]+/ig);
+//			console.log(res);
+		}else{
+			return null;
+		}
+		//保存上次距离
+		moveX = parseFloat(res[1]);
+		moveY = parseFloat(res[2]);
+	}
+
+	resetElement();
+
+})();
+
+</script>
+<script>
+	/**
+	 * 关于座位选定功能
+	 * 类名意义  r、active: 颜色相关，激活色块
+	 hidden: 显示座位为空
+	 enable:	表示座位可选，无人预定
+	 **/
+//	票务类型
+	$('.tickets-type').on('click','span',function(){
+
+		var str = this.className.match(/tickets-[a-zA-Z]+/ig)[0].split('tickets-')[1];
+
+		var tars = document.querySelectorAll('#seatMap .enable');
+
+		if($(this).hasClass('active')){
+
+			$(this).toggleClass('active');
+
+			for(var i = 0;i<tars.length;i++){
+
+				$(tars[i]).removeClass('dark');
+
+			}
+		}
+		else{
+
+			$(this).addClass('active').siblings().removeClass('active');
+
+			for(var i = 0;i<tars.length;i++){
+
+				$(tars[i]).removeClass('dark');
+
+				if(!$(tars[i]).hasClass(str)){
+
+					$(tars[i]).addClass('dark');
+				}
+			}
+		}
+
+	});
+	$('#seatMap').on('click','.enable',function(){
+
+		var html = '<tr class="bdb">'+
+					'<td class="color-p">580元</td>'+
+					'<td>8排6号</td>'+
+					'<td>堂厢</td>'+
+					'<td>距舞台约220米</td>'+
+					'<td class="delete fs-16">&times;</td>'+
+					'</tr>';
+
+		$(this).toggleClass('active');
+
+//		模拟
+		$('.seatInfo').append(html);
+
+	});
+
+//	座位信息
+	$('.flex1').on('click',function(){
+
+		$('.extend').toggleClass('dis');
+
+		$('.maskBox').toggleClass('hide');
+
+	});
+
+
+	$('.seatInfo').on('click','.delete',function(e){
+
+		e.stopPropagation();
+		$(this.parentElement).remove();
+
+	});
+
+	$('.maskBox').on('click',function(){
+
+		$(this).toggleClass('hide');
+
+	});
+</script>
+</body>
+</html>
